@@ -1,0 +1,116 @@
+obj:
+    -
+        name: "met:count:cidade:id"
+        dataType: "integer"
+        aggregation: "count"
+        description: "Quantidade de cidades"
+        tags:
+            - "cidade"
+            - "count"
+    -
+        name: "met:count:estado:id"
+        dataType: "integer"
+        aggregation: "count"
+        description: "Quantidade de estados"
+        tags:
+            - "estado"
+            - "count"
+    -
+        name: "met:count:ponto:id"
+        dataType: "integer"
+        aggregation: "count"
+        description: "Quantidade de pontos"
+        tags:
+            - "ponto"
+            - "count"
+            - "simmc"
+    -
+        name: "met:sum:fnu:downloads"
+        dataType: "integer"
+        aggregation: "sum"
+        description: "Soma dos valores de downloads"
+        tags:
+            - "fnu"
+            - "sum"
+            - "simmc"
+    -
+        name: "met:max:fnu:downloads"
+        dataType: "integer"
+        aggregation: "max"
+        description: "Valor máximo de downloads"
+        tags:
+            - "fnu"
+            - "max"
+            - "simmc"
+    -
+        name: "met:min:fnu:downloads"
+        dataType: "integer"
+        aggregation: "min"
+        description: "Valor mínimo de downloads"
+        tags:
+            - "fnu"
+            - "min"
+            - "simmc"
+    -
+        name: "met:avg:fnu:downloads"
+        dataType: "integer"
+        aggregation: "avg"
+        description: "Média de downloads"
+        tags:
+            - "fnu"
+            - "avg"
+            - "simmc"
+    -
+        name: "met:sum:fnu:uploads"
+        dataType: "integer"
+        aggregation: "sum"
+        description: "Soma dos valores de uploads"
+        tags:
+            - "fnu"
+            - "sum"
+            - "simmc"
+    -
+        name: "met:max:fnu:uploads"
+        dataType: "integer"
+        aggregation: "max"
+        description: "Valor máximo de uploads"
+        tags:
+            - "fnu"
+            - "max"
+            - "simmc"
+    -
+        name: "met:min:fnu:uploads"
+        dataType: "integer"
+        aggregation: "min"
+        description: "Valor mínimo de uploads"
+        tags:
+            - "fnu"
+            - "min"
+            - "simmc"
+    -
+        name: "met:avg:fnu:uploads"
+        dataType: "integer"
+        aggregation: "avg"
+        description: "Média de uploads"
+        tags:
+            - "fnu"
+            - "avg"
+            - "simmc"
+    -
+        name: "met:count:docente:formacao:superior:curso:id"
+        dataType: "integer"
+        aggregation: "count"
+        description: "Quantidade de cursos de ensino superior dos docentes do ensino básico "
+        tags:
+            - "docente"
+            - "basico"
+            - "count"
+    -
+        name: "met:count:docente:instituicao:formacao:id"
+        dataType: "integer"
+        aggregation: "count"
+        description: "Quantidade de instituições de ensino superior dos docentes de ensino básico"
+        tags:
+            - "docente"
+            - "basico"
+            - "count"
