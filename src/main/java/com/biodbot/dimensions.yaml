@@ -1,260 +1,259 @@
-dimensions:
-    obj:
-        -
-            name: "dim:cidade:id"
-            dataType: "integer"
-            description: "Id da cidade do Brasil"
-            tags:
-                - "cidade"
-        -
-            name: "dim:cidade:id:resumido"
-            dataType: "integer"
-            description: "ID resumido da cidade"
-            tags:
-                - "cidade"
-        -
-            name: "dim:cidade:nome"
-            dataType: "string"
-            description: "Cidade do Brasil"
-            tags:
-                - "cidade"
-        -
-            name: "dim:cidade:sigla"
-            dataType: "string"
-            description: "Cidade(SIGLA) do Brasil "
-            tags:
-                - "cidade"
-        -
-            name: "dim:cidade:latitude"
-            dataType: "string"
-            description: "Latitude da cidade do Brasil"
-            tags:
-                - "cidade"
-                - "geolocalizacao"
-        -
-            name: "dim:cidade:longitude"
-            dataType: "string"
-            description: "Longitude da cidade do Brasil"
-            tags:
-                - "cidade"
-                - "geolocalizacao"
-        -
-            name: "dim:estado:id"
-            dataType: "string"
-            description: "ID do estado do Brasil"
-            tags:
-                - "estado"
-        -
-            name: "dim:estado:nome"
-            dataType: "string"
-            description: "Estado do Brasil"
-            tags:
-                - "estado"
-        -
-            name: "dim:estado:sigla"
-            dataType: "string"
-            description: "Estado(SIGLA) do Brasil"
-            tags:
-                - "estado"
-        -
-            name: "dim:regiao:id"
-            dataType: "string"
-            description: "ID da região do Brasil"
-            tags:
-                - "regiao"
-        -
-            name: "dim:regiao:nome"
-            dataType: "string"
-            description: "Região do Brasil"
-            tags:
-                - "regiao"
-        -
-            name: "dim:ponto:id"
-            dataType: "integer"
-            description: "Id do ponto"
-            tags:
-                - "simmc"
-                - "ponto"
-        -
-            name: "dim:ponto:gesac"
-            dataType: "string"
-            description: "Programa gesac"
-            tags:
-                - "simmc"
-                - "ponto"
-        -
-            name: "dim:ponto:telecenter"
-            dataType: "string"
-            description: "Programa telecenter"
-            tags:
-                - "simmc"
-                - "ponto"
-        -
-            name: "dim:ponto:cidadedigital"
-            dataType: "string"
-            description: "Programa cidade digital"
-            tags:
-                - "simmc"
-                - "ponto"
-        -
-            name: "dim:ponto:ativo"
-            dataType: "string"
-            description: "Ponto Ativo"
-            tags:
-                - "simmc"
-                - "ponto"
-        -
-            name: "dim:ponto:latitude"
-            dataType: "integer"
-            description: "Latitude do ponto"
-            tags:
-                - "simmc"
-                - "ponto"
-                - "geolocalizacao"
-        -
-            name: "dim:ponto:longitude"
-            dataType: "integer"
-            description: "Longitude do ponto"
-            tags:
-                - "simmc"
-                - "ponto"
-                - "geolocalizacao"
-        -
-            name: "dim:fnu:mac"
-            dataType: "string"
-            description: "MAC do computador "
-            tags:
-                - "simmc"
-                - "fnu"
-        -
-            name: "dim:fnu:data"
-            dataType: "integer"
-            description: "Data do acesso ao ponto"
-            tags:
-                - "simmc"
-                - "fnu"
-        -
-            name: "dim:fnu:horario"
-            dataType: "integer"
-            description: "Horário do acesso ao ponto"
-            tags:
-                - "simmc"
-                - "fnu"
-        -
-            name: "dim:fnu:downloads"
-            dataType: "integer"
-            description: "Quantidade (bytes) downloads"
-            tags:
-                - "simmc"
-                - "fnu"
-        -
-            name: "dim:fnu:uploads"
-            dataType: "integer"
-            description: "Quantidade (bytes) uploads"
-            tags:
-                - "simmc"
-                - "fnu"
-        -
-            name: "dim:fnu:ip"
-            dataType: "integer"
-            description: "IP"
-            tags:
-                - "simmc"
-                - "fnu"
-        -
-            name: "dim:docente:formacao:superior:curso:id"
-            dataType: "integer"
-            description: "Id do curso de ensino superior dos docentes do ensino básico"
-            tags:
-                - "superior"
-                - "curso"
-        -
-            name: "dim:docente:formacao:superior:curso:area:id"
-            dataType: "integer"
-            description: "Id da área do curso de ensino superior dos docentes do ensino básico"
-            tags:
-                - "superior"
-                - "curso"
-        -
-            name: "dim:docente:formacao:superior:curso:area:nome"
-            dataType: "string"
-            description: "Nome da área do curso de ensino superior dos docentes do ensino básico"
-            tags:
-                - "superior"
-                - "curso"
-        -
-            name: "dim:docente:formacao:superior:curso:cod"
-            dataType: "string"
-            description: "Código do curso de ensino superior dos docentes do ensino básico"
-            tags:
-                - "superior"
-                - "curso"
-        -
-            name: "dim:docente:formacao:superior:curso:nome"
-            dataType: "string"
-            description: "Nome do curso de ensino superior dos docentes do ensino básico"
-            tags:
-                - "superior"
-                - "curso"
-        -
-            name: "dim:docente:formacao:superior:grau"
-            dataType: "string"
-            description: "Grau acadêmico do curso de ensino superior dos docentes do ensino básico"
-            tags:
-                - "superior"
-                - "curso"
-        -
-            name: "dim:docente:instituicao:formacao:id"
-            dataType: "integer"
-            description: "Id da instituição de ensino superior"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:docente:instituicao:formacao:nome"
-            dataType: "string"
-            description: "Nome da instituição de ensino superior"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:docente:instituicao:formacao:dependencia:administrativa:id"
-            dataType: "integer"
-            description: "Id do departamento administrativo da instituição de ensino"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:docente:instituicao:formacao:dependencia:administrativa"
-            dataType: "string"
-            description: "Nome do departamento administrativo da instituição de ensino"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:docente:instituicao:formacao:tipo"
-            dataType: "string"
-            description: "Tipo da instituição de ensino superior"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:docente:instituicao:formacao:funcionamento"
-            dataType: "string"
-            description: "condição do funcionamento da instituição de ensino superior"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:es:instituicao:id"
-            dataType: "integer"
-            description: "Código único de identificação da IES"
-            tags:
-                - "superior"
-                - "instituicao"
-        -
-            name: "dim:ana:exame:ano"
-            dataType: "integer"
-            description: "Ano da ANA"
-            tags:
-                - "ana"
+obj:
+    -
+        name: "dim:cidade:id"
+        dataType: "integer"
+        description: "Id da cidade do Brasil"
+        tags:
+            - "cidade"
+    -
+        name: "dim:cidade:id:resumido"
+        dataType: "integer"
+        description: "ID resumido da cidade"
+        tags:
+            - "cidade"
+    -
+        name: "dim:cidade:nome"
+        dataType: "string"
+        description: "Cidade do Brasil"
+        tags:
+            - "cidade"
+    -
+        name: "dim:cidade:sigla"
+        dataType: "string"
+        description: "Cidade(SIGLA) do Brasil "
+        tags:
+            - "cidade"
+    -
+        name: "dim:cidade:latitude"
+        dataType: "string"
+        description: "Latitude da cidade do Brasil"
+        tags:
+            - "cidade"
+            - "geolocalizacao"
+    -
+        name: "dim:cidade:longitude"
+        dataType: "string"
+        description: "Longitude da cidade do Brasil"
+        tags:
+            - "cidade"
+            - "geolocalizacao"
+    -
+        name: "dim:estado:id"
+        dataType: "string"
+        description: "ID do estado do Brasil"
+        tags:
+            - "estado"
+    -
+        name: "dim:estado:nome"
+        dataType: "string"
+        description: "Estado do Brasil"
+        tags:
+            - "estado"
+    -
+        name: "dim:estado:sigla"
+        dataType: "string"
+        description: "Estado(SIGLA) do Brasil"
+        tags:
+            - "estado"
+    -
+        name: "dim:regiao:id"
+        dataType: "string"
+        description: "ID da região do Brasil"
+        tags:
+            - "regiao"
+    -
+        name: "dim:regiao:nome"
+        dataType: "string"
+        description: "Região do Brasil"
+        tags:
+            - "regiao"
+    -
+        name: "dim:ponto:id"
+        dataType: "integer"
+        description: "Id do ponto"
+        tags:
+            - "simmc"
+            - "ponto"
+    -
+        name: "dim:ponto:gesac"
+        dataType: "string"
+        description: "Programa gesac"
+        tags:
+            - "simmc"
+            - "ponto"
+    -
+        name: "dim:ponto:telecenter"
+        dataType: "string"
+        description: "Programa telecenter"
+        tags:
+            - "simmc"
+            - "ponto"
+    -
+        name: "dim:ponto:cidadedigital"
+        dataType: "string"
+        description: "Programa cidade digital"
+        tags:
+            - "simmc"
+            - "ponto"
+    -
+        name: "dim:ponto:ativo"
+        dataType: "string"
+        description: "Ponto Ativo"
+        tags:
+            - "simmc"
+            - "ponto"
+    -
+        name: "dim:ponto:latitude"
+        dataType: "integer"
+        description: "Latitude do ponto"
+        tags:
+            - "simmc"
+            - "ponto"
+            - "geolocalizacao"
+    -
+        name: "dim:ponto:longitude"
+        dataType: "integer"
+        description: "Longitude do ponto"
+        tags:
+            - "simmc"
+            - "ponto"
+            - "geolocalizacao"
+    -
+        name: "dim:fnu:mac"
+        dataType: "string"
+        description: "MAC do computador "
+        tags:
+            - "simmc"
+            - "fnu"
+    -
+        name: "dim:fnu:data"
+        dataType: "integer"
+        description: "Data do acesso ao ponto"
+        tags:
+            - "simmc"
+            - "fnu"
+    -
+        name: "dim:fnu:horario"
+        dataType: "integer"
+        description: "Horário do acesso ao ponto"
+        tags:
+            - "simmc"
+            - "fnu"
+    -
+        name: "dim:fnu:downloads"
+        dataType: "integer"
+        description: "Quantidade (bytes) downloads"
+        tags:
+            - "simmc"
+            - "fnu"
+    -
+        name: "dim:fnu:uploads"
+        dataType: "integer"
+        description: "Quantidade (bytes) uploads"
+        tags:
+            - "simmc"
+            - "fnu"
+    -
+        name: "dim:fnu:ip"
+        dataType: "integer"
+        description: "IP"
+        tags:
+            - "simmc"
+            - "fnu"
+    -
+        name: "dim:docente:formacao:superior:curso:id"
+        dataType: "integer"
+        description: "Id do curso de ensino superior dos docentes do ensino básico"
+        tags:
+            - "superior"
+            - "curso"
+    -
+        name: "dim:docente:formacao:superior:curso:area:id"
+        dataType: "integer"
+        description: "Id da área do curso de ensino superior dos docentes do ensino básico"
+        tags:
+            - "superior"
+            - "curso"
+    -
+        name: "dim:docente:formacao:superior:curso:area:nome"
+        dataType: "string"
+        description: "Nome da área do curso de ensino superior dos docentes do ensino básico"
+        tags:
+            - "superior"
+            - "curso"
+    -
+        name: "dim:docente:formacao:superior:curso:cod"
+        dataType: "string"
+        description: "Código do curso de ensino superior dos docentes do ensino básico"
+        tags:
+            - "superior"
+            - "curso"
+    -
+        name: "dim:docente:formacao:superior:curso:nome"
+        dataType: "string"
+        description: "Nome do curso de ensino superior dos docentes do ensino básico"
+        tags:
+            - "superior"
+            - "curso"
+    -
+        name: "dim:docente:formacao:superior:grau"
+        dataType: "string"
+        description: "Grau acadêmico do curso de ensino superior dos docentes do ensino básico"
+        tags:
+            - "superior"
+            - "curso"
+    -
+        name: "dim:docente:instituicao:formacao:id"
+        dataType: "integer"
+        description: "Id da instituição de ensino superior"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:docente:instituicao:formacao:nome"
+        dataType: "string"
+        description: "Nome da instituição de ensino superior"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:docente:instituicao:formacao:dependencia:administrativa:id"
+        dataType: "integer"
+        description: "Id do departamento administrativo da instituição de ensino"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:docente:instituicao:formacao:dependencia:administrativa"
+        dataType: "string"
+        description: "Nome do departamento administrativo da instituição de ensino"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:docente:instituicao:formacao:tipo"
+        dataType: "string"
+        description: "Tipo da instituição de ensino superior"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:docente:instituicao:formacao:funcionamento"
+        dataType: "string"
+        description: "condição do funcionamento da instituição de ensino superior"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:es:instituicao:id"
+        dataType: "integer"
+        description: "Código único de identificação da IES"
+        tags:
+            - "superior"
+            - "instituicao"
+    -
+        name: "dim:ana:exame:ano"
+        dataType: "integer"
+        description: "Ano da ANA"
+        tags:
+            - "ana"
